@@ -27,7 +27,9 @@ let chance = new Chance();
         cy.get('input#customer_lastname').type(chance.last());
         cy.get('input#email').clear().type(chance.email());
         cy.get('input#passwd').type('abgail@123');
-        cy.get('select#days').select('13');
+
+        cy.get('select#days').select(chance.natural({min: 1, max: 28}).toString());   
+
         cy.get('select#months').select(chance.month());
         cy.get('select#years').select(chance.year({min: 1980, max: 2000}));
         
