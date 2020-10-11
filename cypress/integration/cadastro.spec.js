@@ -49,7 +49,7 @@ let chance = new Chance();
         cy.get('textarea#other').type(chance.sentence());
 
         cy.get('input#phone').type(chance.phone({ country: 'us'} ));
-        cy.get('input#phone_mobile').type(chance.phone({ country: 'us', mobile: true }));
+        cy.get('input#phone_mobile').type(chance.phone({ country: 'us', mobile: false }));
         cy.get('input#alias').clear().type(chance.word());
         
         cy.get('button#submitAccount').click()
