@@ -1,0 +1,33 @@
+{
+  "name": "bootcamp-challenge-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "report:merge": "mochawesome-merge > full_report.json",
+    "report:mocha": "marge full_report.json",
+    "report:clean": "rm -rf mochawesome-report full_report.json cypress/reports/cucumber-json/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r0nunes/bootcamp-challege-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r0nunes/bootcamp-challege-01/issues"
+  },
+  "homepage": "https://github.com/r0nunes/bootcamp-challege-01#readme",
+  "devDependencies": {
+    "chance": "^1.1.7",
+    "change-js": "^1.0.1",
+    "cypress": "^5.3.0",
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.1.3",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}
