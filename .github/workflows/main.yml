@@ -35,6 +35,9 @@ jobs:
       # install dependencies
       - run: npm install
       
+      # run tests
+      - run: npm run cy:run
+        
       # run report
       - run: npm run report:merge
       
