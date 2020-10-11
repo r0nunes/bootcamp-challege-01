@@ -1,5 +1,5 @@
 ![Actions Status](https://github.com/r0nunes/bootcamp-challege-01/workflows/CI/badge.svg)
-![chance](https://img.shields.io/npm/v/chance?label=chance)
+![chance](https://img.shields.io/npm/v/chance?label=chanceJS)
 ![mocha](https://img.shields.io/npm/v/mocha?color=yellow&label=mocha)
 ![mochawesome](https://img.shields.io/npm/v/mochawesome?color=yellow&label=mochawesome)
 ![mochawesome-merge](https://img.shields.io/npm/v/mochawesome-merge?color=yellow&label=mochawesome-merge)
@@ -41,3 +41,22 @@ Projeto desenvolvido para atender os requisitos do desafio 01, referente ao MOD-
 - Clicar no botão Register
 - Validar que foi redirecionado para a url correta
 - Validar exibição do texto 'Welcome to your account'
+
+# Execução do projeto
+
+Para executar o projeto: 
+
+- Clonar o repositório
+- Dentro da raiz do projeto, executar o comando abaixo:
+`npm install`
+- Após o término, executar o comando:
+`npm run cy:run`
+
+Lembrando que a execução acima é feita em modo headless, ou seja, não teremos visão da interface gráfica nessa situação. 
+
+Ao realizar o término da execução do testes, é possível gerar os relatórios com os comandos abaixo:
+
+`npm run report:merge`
+
+`npm run report:mocha`
+
