@@ -1,3 +1,4 @@
+
 ![Actions Status](https://github.com/r0nunes/bootcamp-challege-01/workflows/CI/badge.svg)
 ![chance](https://img.shields.io/npm/v/chance?label=chanceJS)
 ![mocha](https://img.shields.io/npm/v/mocha?color=yellow&label=mocha)
@@ -15,23 +16,32 @@ Projeto desenvolvido para atender os requisitos do desafio 01, referente ao MOD-
 
 ## Arquitetura
 
-- Cypress @ 5.3.0
+- Cypress @ 4.10.0
 - NodeJS @ v10.19
 - NPM @ 6.14.4
 
 ### Dependecias
-- faker js
+- mocha 
+- mochawesome
+- mochawesome-merge
+- mochawesome-report-generator
+- cypress-multi-reporters
+- ChanceJS
 
-## Desafio
 
-- Criar teste para cadastro de usuário.
-- Criar teste para login do usuário cadastrado.
-- Criar teste para criação e publicação de um artigo.
-- Utilizar Page Objects para separação de responsabilidade dos testes. 
-- Criar asserções com rotas e validações em tela. 
-- Separar as responsábilidades das rotas. 
-- Configurar a pipeline de testes na Azure DevOPS
-- Realizar a publicação dos relatórios na Azure DevOPS.
+## Cenários que devem ser implementados
+- Cadastrar um novo usuário
+
+## Fluxo do cenário:
+
+- Acessar o site automation practice http://automationpractice.com
+- Clicar no botão de Sign in
+- Preencher as informações de e-mail (não pode ser repetido)
+- Clicar no botão Create an Account
+- Preencher as informações do formulário de cadastro
+- Clicar no botão Register
+- Validar que foi redirecionado para a url correta
+- Validar exibição do texto 'Welcome to your account'
 
 # Execução do projeto
 
@@ -41,22 +51,18 @@ Para executar o projeto:
 - Dentro da raiz do projeto, executar o comando abaixo:
 `npm install`
 - Após o término, executar o comando:
--- Para electron: `npm run cy:run:electron`
--- Para chrome: `npm run cy:run:chrome`
--- Para firefox: `npm run cy:run:firefox`
+`npm run cy:run`
 
 Lembrando que a execução acima é feita em modo headless, ou seja, não teremos visão da interface gráfica nessa situação. 
 
-Após o término da execução, é possível visualizar os videos no repositório cypress/videos.
+Ao realizar o término da execução do testes, é possível gerar os relatórios com os comandos abaixo:
 
-# Azure DevOps Pipeline + Reports
+`npm run report:merge`
 
-O projeto está configurado para rodar em uma pipeline da azure. 
+`npm run report:mocha`
 
-Para visualizar a pipeline, acesse: https://dev.azure.com/ronunes0342/Agilizei%20Bootcamp%2002/_build/results?buildId=7&view=results
+# Relatório de execução
 
-
-
-
+O relatório desse projeto é publicado atráves do Github Pages, ao realizar a execução do Github Actions a cada nova alteração no repósitório. Para consultar a execução, acesse o portal: https://r0nunes.github.io/bootcamp-challenge-01/
 
 
