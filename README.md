@@ -62,4 +62,4 @@ Ao realizar o término da execução do testes, é possível gerar os relatório
 
 # Relatório de execução
 
-O relatório desse projeto é publicado atráves do Github Pages, ao realizar a execução do Github Actions a cada nova alteração no repósitório. Para consultar a execução, acesse o portal: https://r0nunes.github.io/bootcamp-challege-01/
+O relatório desse projeto é publicado atráves do Github Pages, ao realizar a execução do Github Actions a cada nova alteração no repósitório. Para consultar a execução, acesse o portal: https://r0nunes.github.io/bootcamp-challenge-01/
