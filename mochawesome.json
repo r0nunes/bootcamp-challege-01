@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-11-27T14:32:17.703Z",
-    "end": "2020-11-27T14:32:33.485Z",
-    "duration": 15782,
+    "start": "2020-11-27T14:37:57.652Z",
+    "end": "2020-11-27T14:38:13.596Z",
+    "duration": 15944,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0188ca7c-173d-4b09-a0dd-04eb86e14dd3",
+      "uuid": "0da8c19f-b89f-4d8f-9385-4ce87a9efd73",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c0a8c025-790a-41c5-894a-b101339e064c",
+          "uuid": "28fbe74a-71d4-49e1-b80b-0518a0b16c81",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastro de usuário 01",
               "fullTitle": "Cadastro Cadastro de usuário 01",
               "timedOut": null,
-              "duration": 15695,
+              "duration": 15873,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('/'); //button signIn home\ncy.get('a[class=\"login\"]').click(); //field mail - SigIn Page\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender1').check();\ncy.get('input#customer_firstname').type(chance.first());\ncy.get('input#customer_lastname').type(chance.last());\ncy.get('input#email').clear().type(chance.email());\ncy.get('input#passwd').type('abgail@123');\ncy.get('select#days').select(chance.natural({\n  min: 1,\n  max: 28\n}).toString());\ncy.get('select#months').select(chance.month());\ncy.get('select#years').select(chance.year({\n  min: 1980,\n  max: 2000\n}));\ncy.get('input#optin').check();\ncy.get('input#firstname').type(chance.first());\ncy.get('input#lastname').type(chance.last());\ncy.get('input#company').type(chance.company());\ncy.get('input#address1').type(chance.address());\ncy.get('input#address2').type(chance.street());\ncy.get('input#city').type(chance.city());\ncy.get('select#id_country').select('United States');\ncy.get('select[name=id_state]').select('New York');\ncy.get('input#postcode').type(chance.zip());\ncy.get('textarea#other').type(chance.sentence());\ncy.get('input#phone').type(chance.phone({\n  country: 'us'\n}));\ncy.get('input#phone_mobile').type(chance.phone({\n  country: 'us',\n  mobile: false\n}));\ncy.get('input#alias').clear().type(chance.word());\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'controller=my-account');\ncy.get('p[class=info-account]').should('contain', 'Welcome to your account. Here you can manage all of your personal information and orders.');",
               "err": {},
-              "uuid": "720df9e6-dfe1-433b-9ef5-fc2e10220f7b",
-              "parentUUID": "c0a8c025-790a-41c5-894a-b101339e064c",
+              "uuid": "b9e3be2a-8988-407a-9b7b-ac0838403004",
+              "parentUUID": "28fbe74a-71d4-49e1-b80b-0518a0b16c81",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "720df9e6-dfe1-433b-9ef5-fc2e10220f7b"
+            "b9e3be2a-8988-407a-9b7b-ac0838403004"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15695,
+          "duration": 15873,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
