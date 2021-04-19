@@ -14,7 +14,7 @@
 
 Projeto desenvolvido para atender os requisitos do desafio 01, referente ao MOD-01 do bootcamp. 
 
-## Arquitetura
+## Arquitetura 
 
 - Cypress @ 4.10.0
 - NodeJS @ v10.19
